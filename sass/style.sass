@@ -1,0 +1,75 @@
+@import 'normolize'
+@import 'fonts'
+@import 'elements'
+
+.hero
+    padding: 0
+    &__text
+        font-weight: 600
+        line-height: 22px
+        margin: 0 0 60px
+        max-width: 685px
+        strong
+
+    &__descr
+        font-size: 20px
+        margin: 0 0 40px
+        strong
+            font-size: 36px
+            line-height: 32px
+            display: block
+
+    &-title
+        padding: 60px 0 70px
+
+    &-img
+        img
+            display: block
+
+    @media screen and ( min-width: 900px )
+        background: linear-gradient(90deg, #25454D 0%, #367585 100%)
+        color: white
+        .container
+            align-items: flex-end
+            flex-direction: row-reverse
+
+        &-title
+            max-width: 55%
+            padding: 60px 0 70px
+
+        &-img
+            max-width: 45%
+
+    @media screen and ( max-width: 900px )
+        .container
+            display: block
+            padding: 0
+        &-img
+            padding: 20px 20px 0
+            text-align: center
+            background: linear-gradient(90deg, #25454D 0%, #367585 100%)
+            img
+                max-width: 85%
+                margin: 0 0 0 auto
+
+        &-title
+            max-width: 700px
+            padding: 30px 20px
+
+        &__text
+            margin-bottom: 35px
+
+        &__descr
+            font-size: 18px
+            strong
+                font-size: 30px
+
+
+        .btn
+            padding: 11px 34px
+            font-size: 18px
+            border-color: #2F62B7
+            color: #2F62B7
+            border-width: 2px
+            // background-color: #2F62B7
+
